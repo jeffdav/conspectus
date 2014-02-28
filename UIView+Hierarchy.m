@@ -61,4 +61,16 @@
     }
 }
 
+- (NSString*)dumpTree:(UIView*)root depth:(NSUInteger)depth {
+    NSString* string = [NSString stringWithFormat:@"%@%@\n", [@"" stringByPaddingToLength:depth withString:@" " startingAtIndex:0], root];
+    for (int i = 0; i < [[root subviews] count]; ++i) {
+        string = [string stringByAppendingString:[self dumpTree:[[root subviews] objectAtIndex:i] depth:depth + 1]];
+    }
+    return string;
+}
+
+- (NSString*)dumpTree {
+    return [self dumpTree:self depth:0];
+}
+
 @end
