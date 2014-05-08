@@ -19,4 +19,10 @@
 // Outline the view and all descendents.
 - (void)outlineHierarchy;
 
+// Prints out the view tree; useful for debugging mainly.
+- (NSString*)dumpTree;
+
+// Prints the ancestors of the view.
+- (NSString*)dumpAncestors;
+
 @end

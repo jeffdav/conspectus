@@ -37,4 +37,39 @@ static UIColor *_debugOutlineColor;
     }];
 }
 
+- (NSString*)dumpTree:(UIView*)root depth:(NSUInteger)depth {
+    NSString* string = [NSString stringWithFormat:@"%@%@\n", [@"" stringByPaddingToLength:depth withString:@" " startingAtIndex:0], root];
+    for (int i = 0; i < [[root subviews] count]; ++i) {
+        string = [string stringByAppendingString:[self dumpTree:[[root subviews] objectAtIndex:i] depth:depth + 1]];
+    }
+    return string;
+}
+
+- (NSString*)dumpTree {
+    return [self dumpTree:self depth:0];
+}
+
+- (NSString*)dumpAncestors {
+    NSMutableArray *ancestors = [NSMutableArray array];
+    UIView* view = self;
+    while (view) {
+        [ancestors addObject:view];
+        view = view.superview;
+    }
+
+    NSUInteger depth = 0;
+    NSString* string = @"";
+
+    for (int i = [ancestors count] - 1; i >= 0; i--) {
+        UIView *v = ancestors[i];
+        NSString *line = [NSString stringWithFormat:@"%@ %@ - %@\n",
+                          [@"" stringByPaddingToLength:depth withString:@" " startingAtIndex:0],
+                          NSStringFromClass([v class]),
+                          NSStringFromCGRect(v.frame)];
+        string = [string stringByAppendingString:line];
+        depth++;
+    }
+    return string;
+}
+
 @end

@@ -22,7 +22,4 @@
 // Traverses the view tree; invokes the given block for each subview of the given class.
 - (void)applyBlockToSubviews:(void(^)(UIView* view, BOOL* stop))block ofClass:(Class)viewClass;
 
-// Prints out the view tree; useful for debugging mainly.
-- (NSString*)dumpTree;
-
 @end
