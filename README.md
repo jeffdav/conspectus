@@ -6,6 +6,9 @@ Useful UIView extensions.
 * Currently ARC agnostic, but will prefer ARC.
 * To use just add the files to your project.
 
-UIView+Hierarchy
-----------------
-Useful methods for traversing view hierarchys to find things and modify the hierarchy.
+# UIView+Debug
+Methods for debugging view layout.
+
+# UIView+Hierarchy
+Methods for traversing view hierarchies to find views and modify the hierarchy.
+
