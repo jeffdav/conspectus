@@ -14,6 +14,14 @@
 
 @implementation CTViewController
 
+- (void)loadView
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
+    view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    view.backgroundColor = [UIColor whiteColor];
+    self.view = view;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

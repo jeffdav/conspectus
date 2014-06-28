@@ -8,9 +8,22 @@
 
 #import "CTAppDelegate.h"
 
+#import "CTViewController.h"
+
 @implementation CTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    CTViewController *viewController = [[CTViewController alloc] init];
+    viewController.title = @"Conspectus Test";
+
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.navigationController = navController;
+
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    window.rootViewController = navController;
+    [window makeKeyAndVisible];
+    self.window = window;
+
     return YES;
 }
 							
