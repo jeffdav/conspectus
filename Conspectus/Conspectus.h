@@ -8,5 +8,7 @@
 
 #pragma once
 
+#import "CGGeometryExtensions.h"
+
 #import "UIView+Debug.h"
 #import "UIView+Hierarchy.h"

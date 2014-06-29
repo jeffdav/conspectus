@@ -12,7 +12,8 @@
 
 #import "UIView+Hierarchy.h"
 
-static UIColor *_debugOutlineColor;
+static UIColor *_debugOutlineColor = nil;
+static NSArray *_debutOutlineHierarchyColors = nil;
 
 @implementation UIView (Debug)
 

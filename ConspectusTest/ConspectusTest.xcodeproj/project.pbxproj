@@ -22,6 +22,7 @@
 		6A4F61E3195F87630079A6A7 /* ConspectusTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F61E2195F87630079A6A7 /* ConspectusTestTests.m */; };
 		6A4F61F1195F886D0079A6A7 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F61EE195F886D0079A6A7 /* UIView+Debug.m */; };
 		6A4F61F2195F886D0079A6A7 /* UIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F61F0195F886D0079A6A7 /* UIView+Hierarchy.m */; };
+		6A4F61F6195F8B6A0079A6A7 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F61F5195F8B6A0079A6A7 /* UIView+Geometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,9 @@
 		6A4F61EF195F886D0079A6A7 /* UIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hierarchy.h"; sourceTree = "<group>"; };
 		6A4F61F0195F886D0079A6A7 /* UIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hierarchy.m"; sourceTree = "<group>"; };
 		6A4F61F3195F887F0079A6A7 /* Conspectus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Conspectus.h; sourceTree = "<group>"; };
+		6A4F61F4195F8B6A0079A6A7 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		6A4F61F5195F8B6A0079A6A7 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		6A4F61F7195F8BC90079A6A7 /* CGGeometryExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGeometryExtensions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +167,11 @@
 				6A4F61F3195F887F0079A6A7 /* Conspectus.h */,
 				6A4F61ED195F886D0079A6A7 /* UIView+Debug.h */,
 				6A4F61EE195F886D0079A6A7 /* UIView+Debug.m */,
+				6A4F61F4195F8B6A0079A6A7 /* UIView+Geometry.h */,
+				6A4F61F5195F8B6A0079A6A7 /* UIView+Geometry.m */,
 				6A4F61EF195F886D0079A6A7 /* UIView+Hierarchy.h */,
 				6A4F61F0195F886D0079A6A7 /* UIView+Hierarchy.m */,
+				6A4F61F7195F8BC90079A6A7 /* CGGeometryExtensions.h */,
 			);
 			name = Conspectus;
 			path = ../../Conspectus;
@@ -271,6 +278,7 @@
 				6A4F61C1195F87630079A6A7 /* main.m in Sources */,
 				6A4F61C5195F87630079A6A7 /* CTAppDelegate.m in Sources */,
 				6A4F61CE195F87630079A6A7 /* CTViewController.m in Sources */,
+				6A4F61F6195F8B6A0079A6A7 /* UIView+Geometry.m in Sources */,
 				6A4F61F2195F886D0079A6A7 /* UIView+Hierarchy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
